@@ -1,10 +1,8 @@
-02_02 : Pure React
+02_03 : Babel
 =========
 
-* Follow the same thing as previous with JSX
-* The object literal can be represented like this
-* show correlation between react elements and jsx
-* convert to JSX style = {style}
-* convert to JSX style={{backgroundColor: 'orange', etc}}
-* Try to run and it won't work
-* In the next video we'll install the following
+* What is Babel
+* History
+* Add the cdn link 
+* show inline transpiling 
+* good for development
