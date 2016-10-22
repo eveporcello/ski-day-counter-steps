@@ -1,13 +1,10 @@
-02_01 : Pure React
+02_02 : Pure React
 =========
 
-* Introduce React Elements
-* Create Dist
-* Create index.js
-* React.createElement
-* We can destructure this.
-* ReactDOM is the set of instructions used to build the DOM
-* Create index.html
-* sudo npm install -g httpster
-* httpster -d dist -p 3000
-
+* Follow the same thing as previous with JSX
+* The object literal can be represented like this
+* show correlation between react elements and jsx
+* convert to JSX style = {style}
+* convert to JSX style={{backgroundColor: 'orange', etc}}
+* Try to run and it won't work
+* In the next video we'll install the following
