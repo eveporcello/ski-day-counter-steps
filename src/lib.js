@@ -1,15 +1,18 @@
+import React from 'react'
+import text from './titles.json'
+
 export const hello = (
     <h1 id='title'
-        className='header'
+        className='hello'
         style={{backgroundColor: 'purple', color: 'yellow' }}>
-        Hello World!
+        {text.hello}
     </h1>
 )
 
 export const goodbye = (
     <h1 id='title'
-        className='header'
+        className='goodbye'
         style={{backgroundColor: 'yellow', color: 'purple' }}>
-        Goodbye!
+        {text.goodbye}
     </h1>
 )

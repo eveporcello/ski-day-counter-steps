@@ -3,6 +3,9 @@ import { render } from 'react-dom'
 import { hello, goodbye } from './lib'
 
 render(
-    goodbye,
+    <div>
+        {hello}
+        {goodbye}
+    </div>,
     document.getElementById('react-container')
 )
