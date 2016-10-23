@@ -1,11 +1,8 @@
 import React from 'react'
 import { render } from 'react-dom'
+import { hello, goodbye } from './lib'
 
 render(
-    <h1 id='title'
-        className='header'
-        style={{backgroundColor: 'purple', color: 'yellow' }}>
-        Hello World!
-    </h1>,
+    goodbye,
     document.getElementById('react-container')
 )
