@@ -1,50 +1,62 @@
-02_06 : Webpack
-=========
+Adding CSS
+=======
 
-* Introduce concept of loading json data
-* introduce module concepts
-
-* create a lib.js file
+* Lib.js - get rid of inline styles
 
 ```javascript
 import React from 'react'
 import text from './titles.json'
+import './stylesheets/goodbye.scss'
+import './stylesheets/hello.css'
 
 export const hello = (
     <h1 id='title'
-        className='header'
-        style={{backgroundColor: 'purple', color: 'yellow' }}>
+        className='hello'>
         {text.hello}
     </h1>
 )
 
 export const goodbye = (
     <h1 id='title'
-        className='header'
-        style={{backgroundColor: 'yellow', color: 'purple' }}>
+        className='goodbye'>
         {text.goodbye}
     </h1>
 )
 ```
 
+* hello.css
 
-* Create titles.json
-```
-{
-  "hello": "Bonjour!",
-  "goodbye": "Au Revoir!"
+```css
+.hello {
+    background-color: indigo;
+    color: turquoise;
 }
 ```
 
-* npm install --save-dev json-loader
-* edit the webpack.config
+* Goodbye.scss
 
-```javascript
-{
-                test: /\.json$/,
-                exclude: /(node_modules)/,
-                loader: 'json-loader'
-            }
+```scss
+$bg-color: turquoise;
+$text-color: indigo;
+
+.goodbye {
+  background-color: $bg-color;
+  color: $text-color;
+}
 ```
 
-* Run it
+
+* change config
+* npm install style-loader css-loader autoprefixer-loader sass-loader node-sass --save-dev
+
+```javascript
+            {
+                test: /\.css$/,
+                loader: 'style-loader!css-loader!autoprefixer-loader'
+
+            },
+            {
+                test: /\.scss/,
+                loader: 'style-loader!css-loader!autoprefixer-loader!sass-loader'
+            }
+```
