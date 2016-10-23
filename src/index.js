@@ -1,4 +1,3 @@
-// const { createElement } = React
 const { render } = ReactDOM
 
 render(
