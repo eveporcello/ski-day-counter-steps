@@ -1,8 +1,26 @@
-02_03 : Babel
+02_05 : Webpack
 =========
 
-* What is Babel
-* History
-* Add the cdn link 
-* show inline transpiling 
-* good for development
+* Explain Webpack
+* Create Webpack config file
+* npm install webpack babel-loader --save-dev
+
+```
+webpack
+npm start
+```
+
+* npm install webpack-dev-server
+* npm install react react-dom --save
+* remove links from index 
+* change package.json
+
+```javascript
+"start": "./node_modules/.bin/webpack-dev-server"
+```
+
+* Run npm start
+
+```
+npm start
+```
